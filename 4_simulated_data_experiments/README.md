@@ -12,8 +12,8 @@ We then used the previous batches of samples to separate this alignment into bat
 
 
 ## Results
-# Approaches with 24-hour runtime restrictions (4.1-4.6)
-The experiments in 4.1 to 4.6 test both *de novo* and online approaches to tree inference on 50 batches of ~5,000 samples each. The *de novo* approaches infer trees from 50 iterations of increasing size (adding a batch to the list of input samples on each iteration). On each of the 50 iterations of the online approaches, a single batch is added to the existing tree inferred in the previous iteration. These experiments were restricted to a 24-hour runtime, and parameters for programs were chosen with this in mind. 
+# Simulated Online / Simulated De Novo: Approaches with 24-hour runtime restrictions (4.1-4.6)
+These are the Simulated Online and Simulated De Novo experiments in the manuscript. The experiments in 4.1 to 4.6 test both *de novo* and online approaches to tree inference on 50 batches of ~5,000 samples each. The *de novo* approaches infer trees from 50 iterations of increasing size (adding a batch to the list of input samples on each iteration). On each of the 50 iterations of the online approaches, a single batch is added to the existing tree inferred in the previous iteration. These experiments were restricted to a 24-hour runtime, and parameters for programs were chosen with this in mind. 
 
 ### 4.1: Online IQ-TREE 2
 
@@ -260,8 +260,8 @@ Rscript getDist.R
 | 49 | 227555 | 4303 | 0.01656593   | 891923767646161853 | -- | 155272 | -1850274.795396581 |
 | 50 | 233326 | 4408 | 0.01654183  | 1181363949841748591 | -- | 160239 | -1908075.4397501368 |
 
-# Approaches without 24-hour runtime restriction
-The following experiments were performed on only the smallest datasets, with iterations of increasing size containing ~4.5k, ~8.9k, and ~13.2k samples. Experiments were allowed to run for up to two weeks. RAxML-NG iterations 2 and 3 did not terminate within this time, so the best tree inferrred so far was chosen for comparison in these cases. We compared *de novo* inference using RAxML-NG, IQ-TREE 2 with stochastic tree search, and matOptimize.
+# Simulated Unrestricted Experiments: Approaches without 24-hour runtime restriction
+These are the Simulated Unrestricted Experiments in the manuscript. The following experiments were performed on only the smallest datasets, with iterations of increasing size containing ~4.5k, ~8.9k, and ~13.2k samples. Experiments were allowed to run for up to two weeks. RAxML-NG iterations 2 and 3 did not terminate within this time, so the best tree inferrred so far was chosen for comparison in these cases. We compared *de novo* inference using RAxML-NG, IQ-TREE 2 with stochastic tree search, and matOptimize.
 
 Robinson-Foulds and Quartet distances to the ground truth tree for each iteration are reported.
 

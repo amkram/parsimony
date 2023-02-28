@@ -1,6 +1,6 @@
 # Online Phylogenetics using Parsimony Supplemental Repository
 
-This repository contains supplemental results, data, and scripts for Thornlow et al., 2022
+This repository contains supplemental results, data, and scripts for Kramer, Thornlow, et al., 2023
 
 The subfolders are outlined below.
 
@@ -8,12 +8,11 @@ The subfolders are outlined below.
 
 `1_make_starting_tree`: This folder contains scripts to produce a filtered global phylogeny, the "starting tree" in the manuscript. Samples from the starting tree are used in `3_real_data_experiments` to infer trees from real data.
 
+`2_optimization_experiments`: Scripts for testing various optimization methods (Ground Truth Optimization and Correlation Optimization Experiments in the manuscript)
 
-`2_optimize_starting_tree`: The starting tree from the previous folder is optimized with various methods, and the best tree is chosen as the "ground truth" over which to simulate sequences (in folder `4_simulated_data_experiments`)
+`3_real_data_experiments`: This folder contains scripts and results of tree inference methods on real SARS-CoV-2 data. Each method is compared by log likelihood. These are the Real Online Experiments, Real De Novo Experiments, and Real Unrestricted Experiments in the manuscript.
 
-`3_real_data_experiments`: This folder contains scripts and results of tree inference methods on real SARS-CoV-2 data. Each method is compared by log likelihood.
-
-`4_simulated_data_experiments`: Scripts and results of inference methods on simulated SARS-CoV-2 data. Comparisons between methods are done by computing tree distances to a ground truth phylogeny.
+`4_simulated_data_experiments`: Scripts and results of inference methods on simulated SARS-CoV-2 data. Comparisons between methods are done by computing tree distances to a ground truth phylogeny. These are the Simuated Online Experiments, Simulated De Novo Experiments, and Simulated Unrestricted Experiments in the manuscript.
 
 ---
 
@@ -41,7 +40,7 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 
 # Install packages (versions are those used in our experiments except where stated otherwise)
-conda install usher=0.4.8
+conda install usher=0.5.0
 conda install raxml-ng=1.1.0
 ```
 For IQ-TREE 2, download version 2.1.3 Linux multicore edition:
