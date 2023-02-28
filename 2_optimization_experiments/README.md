@@ -1,6 +1,6 @@
 # Optimize starting tree
 
-In this folder, we evaluate the performance of [matOptimize](https://github.com/yatisht/usher), [matOptimize TreeRearrange](https://github.com/yceh/usher/tree/Refactor-FS-cleanup), [IQ-TREE 2](http://www.iqtree.org/#download), and [FastTree2](http://www.microbesonline.org/fasttree/) as optimization strategies on the starting tree. A final optimized tree was chosen as the "ground truth" phylogeny for downstream analyses.
+In this folder, we evaluate the performance of [matOptimize](https://github.com/yatisht/usher), [matOptimize TreeRearrange](https://github.com/yceh/usher/tree/Refactor-FS-cleanup), [IQ-TREE 2](http://www.iqtree.org/#download), and [FastTree2](http://www.microbesonline.org/fasttree/) as optimization strategies on the starting tree. A final optimized tree was chosen as the "ground truth" phylogeny for downstream analyses. These are the Ground Truth and Correlation Optimization Experiments from the manuscript.
 
 **Input**: The "starting tree" from folder 1
 
